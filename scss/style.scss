@@ -24,6 +24,11 @@
     font-family: "Whitney";
     margin-left: 186px;
 }
+.container {
+    max-width: 69.2%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .title {
     font-size: 40px;
     font-weight: 600;
@@ -36,6 +41,17 @@
     margin-bottom: 20px;
     line-height: 24px;
 }
+@media (max-width: 1700px) {
+    .container {
+        max-width: 90%;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 18px;
+    }
+}
 @media (min-width: 2550px) {
     .title {
         font-size: 50px;
@@ -47,6 +63,8 @@
     }
 }
 
+//==============================HEADER======================================
+
 .header {
     background-size: cover;
     position: relative;
@@ -55,16 +73,10 @@
     position: absolute;
     width: 100%;
 }
-.container {
-    max-width: 69.2%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 .header__inner {
     position: relative;
     margin-bottom: 560px;
 }
-
 .logo__img {
     padding-top: 90px;
     margin: 0 auto;
@@ -92,6 +104,22 @@
     text-align: center;
     font-weight: 400;
 }
+@media (max-width: 1440px) {
+    .header__off1 {
+        top: 122%;
+    }
+    .header__inner {
+        margin-bottom: 40%;
+    }
+}
+@media (max-width: 1200px) {
+    .header {
+        padding-bottom: 100px;
+    }
+    .logo__img {
+        width: 40%;
+    }
+}
 @media (min-width: 2550px) {
     .header__inner {
         margin-bottom: 745px;
@@ -101,7 +129,7 @@
     }
 }
 
-
+//==============================TASKS======================================
 
 .main {
     margin-top: -15%;
@@ -122,6 +150,9 @@
 }
 .tasks__img {
     margin-right: 528px;
+}
+.tasks__img2 {
+    display: none;
 }
 .tasks__block-text {
     position: relative;
@@ -144,6 +175,63 @@
 .tasks__block-text3::before {
     content: "3.";
 }
+@media (max-width: 1700px) {
+    .tasks__inner {
+        padding-top: 36%;
+    }
+}
+@media (max-width: 1440px) {
+    .tasks__bg {
+        width: 75%;
+    }
+    .tasks__inner {
+        padding-top: 34%;
+    }
+}
+@media (max-width: 1340px) {
+    .tasks__bg {
+        width: 75%;
+    }
+    .tasks__inner {
+        padding-top: 26%;
+    }
+}
+@media (max-width: 1200px) {
+    .tasks {
+        background: radial-gradient(66.67% 57.74% at 66.67% 50%, #F7C835 0%, #F7A330 100%);
+    }
+    .tasks__inner {
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .tasks__bg {
+        display: none;
+    }
+    .tasks__img {
+        display: none;
+    }
+    .tasks__img2 {
+        display: block;
+        margin-right: 50px;
+    }
+    .tasks__block-text::before {
+        position: absolute;
+        content: "";
+        top: 3px;
+        left: 0px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .tasks__block-text1::before {
+        content: "1.";
+    }
+    .tasks__block-text2::before {
+        content: "2.";
+    }
+    .tasks__block-text3::before {
+        content: "3.";
+    }
+}
 @media (min-width: 2550px) {
     .tasks__bg {
         width: 65%;
@@ -157,7 +245,7 @@
     }
 }
 
-
+//==============================PORTRAITS======================================
 
 .portraits {
     position: relative;
@@ -190,7 +278,7 @@
     }
 }
 
-
+//==============================DESICION======================================
 
 .desicion {
     position: relative;
@@ -224,7 +312,7 @@
     }
 }
 
-
+//==============================OSOBENNOSTI======================================
 
 .osobennosti {
     position: relative;
@@ -286,6 +374,9 @@
 .osobennosti__block-text {
     margin-bottom: 0px;
 }
+
+//==============================SUPPS======================================
+
 .supps {
     margin-top: 200px;
     margin-bottom: 100px;
@@ -316,9 +407,9 @@
     justify-content: center;
     align-items: center;
 }
-.supps__item:nth-child(6n) {
-    margin-right: 0;
-}
+
+//==============================RESULT======================================
+
 .result {
     margin-bottom: 100px;
 }
@@ -338,7 +429,6 @@
     align-items: center;
     flex-basis: 33%;
 }
-
 .result__item-title {
     font-weight: 600;
     font-size: 60px;
@@ -346,6 +436,9 @@
     color: #F7A330;
     margin-bottom: 12px;
 }
+
+//==============================OPINION======================================
+
 .opinion {
     margin-bottom: 100px;
 }
@@ -364,6 +457,8 @@
     margin-bottom: 100px;
 }
 
+//==============================FOOTER======================================
+
 .footer__title {
     text-align: center;
 }
@@ -379,7 +474,6 @@
 .footer__item-top {
     flex-basis: 25%;
 }
-
 .footer__bottom {
     display: flex;
     flex-wrap: wrap;
